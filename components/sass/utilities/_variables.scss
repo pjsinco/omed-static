@@ -1,0 +1,60 @@
+/**
+ * COLORS
+ * 
+ */
+$white: #ffffff;
+$verydark: #333;
+$orange: #ef6831;
+$yellow: #fab636;
+$purple: #6b56a0;
+$blue: #1eb3da;
+$linkblue: #1e5587;
+$aoablue: #000066;
+$green: #cad941;
+$mediumgray: #97a4ac;
+$lightgray: #e4e8eb;
+
+$primarycolor: $orange;
+$linkcolor: $linkblue;
+
+
+/**
+ * FONTS
+ * 
+ */
+$fontsizebase: 1.125em;
+$bodylineheight: 1.4;
+$normal: 400;
+$bold: 600;
+$primaryfont: 'Raleway', sans-serif;
+$fontcolor: $verydark;
+$fontcolorlighter: $mediumgray;
+$fontcolorlightest: $lightgray;
+
+/**
+ * LAYOUT
+ *
+ */
+$site-width: 62em;
+
+/**
+ * BREAKPOINTS
+ * 
+ */
+$all            : 'all';
+$screen         : 'screen';
+$small-start    : 20em;        // 320px
+$medium-start   : 30em;        // 480px
+$large-start    : 48em;        // 768px
+$max-site-start : $site-width; // 992px
+
+/**
+ * HOVER.CSS
+ *
+ */
+
+// Durations
+$fastduration: .1s;
+$mediumduration: .2s;
+$slowduration: .5s;
+$slowerduration: .8s;
