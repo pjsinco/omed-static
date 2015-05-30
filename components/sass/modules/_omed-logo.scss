@@ -1,0 +1,14 @@
+.omed-logo {
+
+    &__top {
+
+    }
+    
+    &__bottom {
+        display: none;
+        @include breakpoint($screen $desktopstart) {
+            display: inline;
+        }
+    }
+
+}

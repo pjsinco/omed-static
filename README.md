@@ -3,5 +3,6 @@
 * Brad Frost: [The toggle](http://bradfrost.com/blog/web/responsive-nav-patterns/#toggle)
 * Filament Group [A Responsive Design Approach for Navigation, Part 1](http://www.filamentgroup.com/lab/responsive-design-approach-for-navigation.html)
     * [Demo](http://www.filamentgroup.com/examples/rwd-nav-patterns/)
+* Google Developers: [Web Fundamentals](https://developers.google.com/web/fundamentals/?hl=en)
 
 * Generated gotham web fonts at fontsquirrel

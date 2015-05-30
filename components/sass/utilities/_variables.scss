@@ -35,7 +35,7 @@ $fontcolorlightest: $lightgray;
  * LAYOUT
  *
  */
-$site-width: 62em;
+$sitewidth: 62em;
 
 /**
  * BREAKPOINTS
@@ -43,10 +43,10 @@ $site-width: 62em;
  */
 $all            : 'all';
 $screen         : 'screen';
-$small-start    : 20em;        // 320px
-$medium-start   : 30em;        // 480px
-$large-start    : 48em;        // 768px
-$max-site-start : $site-width; // 992px
+$smallstart    : 20em;        // 320px
+$mediumstart   : 30em;        // 480px
+$largestart    : 48em;        // 768px
+$desktopstart : $sitewidth; // 992px
 
 /**
  * HOVER.CSS
