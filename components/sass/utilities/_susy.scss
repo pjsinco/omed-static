@@ -1,0 +1,11 @@
+$gridpage: (
+    global-box-sizing: border-box,
+    columns: 12,
+    container: $site-width,
+    gutters: .25,
+    debug: (
+        image: show-columns,
+        output: overlay,
+        toggle: top right
+    )
+);
