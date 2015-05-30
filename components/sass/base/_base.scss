@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+
+html {
+    font-size: 100%;
+    line-height: 1;
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: $primaryfont;
+    background-color: $white;
+}
+
+a {
+    text-decoration: none;
+    color: $linkcolor;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: $fontsizebase;
+    line-height: $bodylineheight;
+}
+
+h1 {
+
+}
+
+ul, ol {
+    list-style-position: inside;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+img {
+    height: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+strong {
+    font-weight: $bold;
+    color: inherit;
+}
