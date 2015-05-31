@@ -18,6 +18,9 @@
     &--outer {
         position: relative;
         overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $sitewidth;
         width: 100%;
     }
 
