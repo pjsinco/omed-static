@@ -1,5 +1,5 @@
-header(role="banner").promote#banner
-    button.nav__btn: img(src="img/hamburger.png").nav__btn-image
+header(role="banner").promote#top
+    button.nav__btn#nav-open-btn: img(src="img/hamburger.png").nav__btn-image
         
     h1.site-branding__logo
         a(href="/").site-branding__link
@@ -16,18 +16,16 @@ header(role="banner").promote#banner
                 input(type="search" name="q" placeholder="Search OMED Conferences")#q.site-search__input
             input(type="submit").site-search__button-hide
 
-    section.site-navigation
-        a(href="#site-nav").nav__link--toggle
-            span.icon-menu
-        nav(role="navigation")#site-nav.nav
-            ul.nav__list
-                li.nav__item: a(href="#").nav__item--link Registration
-                li.nav__item: a(href="#").nav__item--link Travel & Hotel
-                li.nav__item: a(href="#").nav__item--link What's New
-                li.nav__item: a(href="#").nav__item--link Program
-                li.nav__item: a(href="#").nav__item--link Daily Schedule
-                li.nav__item: a(href="#").nav__item--link Exhibits
-                li.nav__item: a(href="#").nav__item--link Press Room
-                li.nav__item: a(href="#").nav__item--link Contact Us
+nav(role="navigation")#site-nav.nav
+    ul.nav__list
+        li.nav__item: a(href="#").nav__item--link Registration
+        li.nav__item: a(href="#").nav__item--link Travel & Hotel
+        li.nav__item: a(href="#").nav__item--link What's New
+        li.nav__item: a(href="#").nav__item--link Program
+        li.nav__item: a(href="#").nav__item--link Daily Schedule
+        li.nav__item: a(href="#").nav__item--link Exhibits
+        li.nav__item: a(href="#").nav__item--link Press Room
+        li.nav__item: a(href="#").nav__item--link Contact Us
 
+    button.nav__btn--nobg#nav-close-btn: img(src="img/close-btn.svg").nav__btn-image
     

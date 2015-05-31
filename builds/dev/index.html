@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/modernizr-latest.js"></script>
     <script>
       (function(d) {
         var config = {
@@ -22,9 +23,11 @@
   <body>
     <!--from html5boilerplate--><!--[if lt IE 9]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser.  Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience."></p><![endif]-->
-    <header role="banner" id="banner" class="promote">
-      <button class="nav__btn"><img src="img/hamburger.png" class="nav__btn-image"></button>
-      <h1 class="site-branding__logo"><a href="/" class="site-branding__link"><?xml version="1.0" encoding="utf-8"?>
+    <div class="wrap--outer">
+      <div class="wrap--inner">
+        <header role="banner" id="top" class="promote">
+          <button id="nav-open-btn" class="nav__btn"><img src="img/hamburger.png" class="nav__btn-image"></button>
+          <h1 class="site-branding__logo"><a href="/" class="site-branding__link"><?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 208.7 62.8" style="enable-background:new 0 0 208.7 62.8;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#EF6831;}
@@ -92,19 +95,19 @@
 </g>
 </svg>
 </a>
-        <div class="site-branding--minor">
-          <div class="site-branding__logo"><a href="http://www.osteopathic.org" title="American Osteopathic Association" class="site-branding__link"></a></div>
-        </div>
-      </h1>
-      <section class="site-search">
-        <form action="/search" id="search-form" class="site-search__form">
-          <label id="search-lable" for="q" class="site-search__lable">
-            <input type="search" name="q" placeholder="Search OMED Conferences" id="q" class="site-search__input">
-          </label>
-          <input type="submit" class="site-search__button-hide">
-        </form>
-      </section>
-      <section class="site-navigation"><a href="#site-nav" class="nav__link--toggle"><span class="icon-menu"></span></a>
+            <div class="site-branding--minor">
+              <div class="site-branding__logo"><a href="http://www.osteopathic.org" title="American Osteopathic Association" class="site-branding__link"></a></div>
+            </div>
+          </h1>
+          <section class="site-search">
+            <form action="/search" id="search-form" class="site-search__form">
+              <label id="search-lable" for="q" class="site-search__lable">
+                <input type="search" name="q" placeholder="Search OMED Conferences" id="q" class="site-search__input">
+              </label>
+              <input type="submit" class="site-search__button-hide">
+            </form>
+          </section>
+        </header>
         <nav role="navigation" id="site-nav" class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__item--link">Registration</a></li>
@@ -116,143 +119,143 @@
             <li class="nav__item"><a href="#" class="nav__item--link">Press Room</a></li>
             <li class="nav__item"><a href="#" class="nav__item--link">Contact Us</a></li>
           </ul>
+          <button id="nav-close-btn" class="nav__btn--nobg"><img src="img/close-btn.svg" class="nav__btn-image"></button>
         </nav>
-      </section>
-    </header>
-    <div id="main" class="content">
-      <div class="row">
-        <div class="size-1-of-1">
-          <div class="big"><a href="#">
-              <figure class="big__figure"><img src="img/orlando.png" class="image__img"></figure></a>
-            <div class="big__body">
-              <h1 class="big__title">See you in Orlando</h1>
-              <p class="big__body-text"></p>Meet and connect with your peers, colleagues and friends at the largest gathering of DOs in the world.
+        <div class="row">
+          <div class="size-1-of-1">
+            <div class="big"><a href="#">
+                <figure class="big__figure"><img src="img/orlando.png" class="image__img"></figure></a>
+              <div class="big__body">
+                <h1 class="big__title">See you in Orlando</h1>
+                <p class="big__body-text"></p>Meet and connect with your peers, colleagues and friends at the largest gathering of DOs in the world.
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row module">
-        <div class="size-1-of-3">
-          <div class="box">
-            <h3 class="box__title">Quick Links
-              <ul>
-                <li class="box__list-item"><a href="#" class="box__link"><span class="icon-calendar">Registration</span></a></li>
-                <li class="box__list-item"><a href="#" class="box__link"><span class="icon-plane">Travel and Hotel</span></a></li>
-                <li class="box__list-item"><a href="#" class="box__link"><span class="icon-drawer">Past Conferences</span></a></li>
-                <li class="box__list-item"><a href="#" class="box__link"><span class="icon-pencil">CME Attestation</span></a></li>
-              </ul>
-            </h3>
+        <div class="row module">
+          <div class="size-1-of-3">
+            <div class="box">
+              <h3 class="box__title">Quick Links
+                <ul>
+                  <li class="box__list-item"><a href="#" class="box__link"><span class="icon-calendar">Registration</span></a></li>
+                  <li class="box__list-item"><a href="#" class="box__link"><span class="icon-plane">Travel and Hotel</span></a></li>
+                  <li class="box__list-item"><a href="#" class="box__link"><span class="icon-drawer">Past Conferences</span></a></li>
+                  <li class="box__list-item"><a href="#" class="box__link"><span class="icon-pencil">CME Attestation</span></a></li>
+                </ul>
+              </h3>
+            </div>
+          </div>
+          <div class="size-1-of-3 border-2-of-3">
+            <div class="box">
+              <h3 class="box__title">Event News
+                <ul>
+                  <li class="box__list-item"><a href="#" class="box__link"><span class="icon-document">Check Out Highlights from OMED 2014</span></a></li>
+                  <li class="box__list-item">
+                    <figure class="box__image"><img src="img/audience-1.jpg"></figure>
+                    <figcaption>
+                      <p class="box__caption"></p>A lot happened in OMED 2014! View videos, slideshows and more.
+                    </figcaption>
+                  </li>
+                </ul>
+              </h3>
+            </div>
+          </div>
+          <div class="size-1-of-3 border-3-of-3">
+            <div class="box">
+              <h3 class="box__title">Featured Speakers
+                <ul>
+                  <li class="box__list-item"><a href="#" class="box__link"><span class="icon-mic">Lorem risus amet condimentum vestibulum</span></a>
+                    <figure class="box__image"><img src="img/faines.jpg"></figure>
+                    <figcaption>
+                      <p class="box__caption"></p>Adrienne White-Faines, MPA
+                    </figcaption>
+                    <figure class="box__image"><img src="img/becher-tp.jpg"></figure>
+                    <figcaption>
+                      <p class="box__caption"></p>John W. Becher, DO
+                    </figcaption>
+                  </li>
+                </ul>
+              </h3>
+            </div>
           </div>
         </div>
-        <div class="size-1-of-3 border-2-of-3">
-          <div class="box">
-            <h3 class="box__title">Event News
-              <ul>
-                <li class="box__list-item"><a href="#" class="box__link"><span class="icon-document">Check Out Highlights from OMED 2014</span></a></li>
-                <li class="box__list-item">
-                  <figure class="box__image"><img src="img/audience-1.jpg"></figure>
-                  <figcaption>
-                    <p class="box__caption"></p>A lot happened in OMED 2014! View videos, slideshows and more.
-                  </figcaption>
-                </li>
-              </ul>
-            </h3>
+        <div class="row module">
+          <div class="size-1-of-3">           
+            <div class="box">
+              <h3 class="box__title">Twitter Feed<a class="twitter-timeline" href="https://twitter.com/hashtag/OMED2015" data-widget-id="604627155864141824">#OMED2015 Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+              </h3>
+            </div>
           </div>
-        </div>
-        <div class="size-1-of-3 border-3-of-3">
-          <div class="box">
-            <h3 class="box__title">Featured Speakers
-              <ul>
-                <li class="box__list-item"><a href="#" class="box__link"><span class="icon-mic">Lorem risus amet condimentum vestibulum</span></a>
-                  <figure class="box__image"><img src="img/faines.jpg"></figure>
+          <div class="size-2-of-3">           
+            <div class="box">
+              <h3 class="box__title">OMED 2014 Wrap-Up
+                <div id="video" class="box__video">
                   <figcaption>
                     <p class="box__caption"></p>Adrienne White-Faines, MPA
                   </figcaption>
-                  <figure class="box__image"><img src="img/becher-tp.jpg"></figure>
-                  <figcaption>
-                    <p class="box__caption"></p>John W. Becher, DO
-                  </figcaption>
-                </li>
-              </ul>
-            </h3>
+                </div>
+              </h3>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row module">
-        <div class="size-1-of-3">           
-          <div class="box">
-            <h3 class="box__title">Twitter Feed<a class="twitter-timeline" href="https://twitter.com/hashtag/OMED2015" data-widget-id="604627155864141824">#OMED2015 Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-            </h3>
-          </div>
-        </div>
-        <div class="size-2-of-3">           
-          <div class="box">
-            <h3 class="box__title">OMED 2014 Wrap-Up
-              <div id="video" class="box__video">
-                <figcaption>
-                  <p class="box__caption"></p>Adrienne White-Faines, MPA
-                </figcaption>
+        <div class="row module">
+          <div class="size-1-of-1">           
+            <div class="box">
+              <h3 class="box__title">Sponsors</h3>
+              <div class="right"><a href="#"><span class="icon-sponsor-button"></span></a></div>
+              <div class="gallery">                   
+                <ul>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/american-express_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/aprima_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/astrazeneca_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/bhg_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/bioback_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/challenger_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/cleveland-heart-lab_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/combank_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/cutting-edge_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/egg-nutrition-center_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/eisai_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/fsm_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/health-fusion_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/janssen_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/kareo_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/NovoNordisk_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/orexo_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/resorative-formulations_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/shire_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/takeda_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/united-allergy-services_jpg.jpg" class="gallery__image image__img"></a></li>
+                  <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/vital-nutrients_jpg.jpg" class="gallery__image image__img"></a></li>
+                </ul>
               </div>
-            </h3>
-          </div>
-        </div>
-      </div>
-      <div class="row module">
-        <div class="size-1-of-1">           
-          <div class="box">
-            <h3 class="box__title">Sponsors</h3>
-            <div class="right"><a href="#"><span class="icon-sponsor-button"></span></a></div>
-            <div class="gallery">                   
-              <ul>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/american-express_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/aprima_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/astrazeneca_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/bhg_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/bioback_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/challenger_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/cleveland-heart-lab_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/combank_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/cutting-edge_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/egg-nutrition-center_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/eisai_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/fsm_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/health-fusion_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/janssen_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/kareo_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/NovoNordisk_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/orexo_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/resorative-formulations_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/shire_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/takeda_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/united-allergy-services_jpg.jpg" class="gallery__image image__img"></a></li>
-                <li class="gallery__item"><a href="#">Lorem ipsum<img src="img/sponsors/vital-nutrients_jpg.jpg" class="gallery__image image__img"></a></li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
+      <div class="row module">
+        <footer role="contentinfo" class="footer">
+          <ul class="footer__list--horiz">
+            <li class="footer__list-item--horiz"><a href="#">Privacy Policy</a></li>
+            <li class="footer__list-item--horiz"><a href="#">Terms of Use</a></li>
+            <li class="footer__list-item--horiz"><a href="#">Copyright Notice</a></li>
+          </ul>
+          <p class="footer__body-text"></p>Copyright 2015, <a href="#" class="footer__link">American Osteopathic Association</a>. All rights reserved.
+        </footer>
+      </div>
+      <script src="js/jquery.js"></script>
+      <script src="js/nav.js"></script>
+      <script src="js/jquery.fitvids.js"></script>
+      <script>
+        /* fitvids */
+        $(document).ready(function() {
+          $('#video').fitVids();
+        });
+        
+      </script>
+      <script src="http://localhost:35729/livereload.js"></script>
     </div>
-    <div class="row module">
-      <footer role="contentinfo" class="footer">
-        <ul class="footer__list--horiz">
-          <li class="footer__list-item--horiz"><a href="#">Privacy Policy</a></li>
-          <li class="footer__list-item--horiz"><a href="#">Terms of Use</a></li>
-          <li class="footer__list-item--horiz"><a href="#">Copyright Notice</a></li>
-        </ul>
-        <p class="footer__body-text"></p>Copyright 2015, <a href="#" class="footer__link">American Osteopathic Association</a>. All rights reserved.
-      </footer>
-    </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script>
-      /* fitvids */
-      $(document).ready(function() {
-        $('#video').fitVids();
-      });
-      
-    </script>
-    <script src="http://localhost:35729/livereload.js"></script>
   </body>
 </html>

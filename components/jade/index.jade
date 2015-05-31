@@ -5,158 +5,160 @@ html
     body
         include ie8-comment
         
-        include header
-    
-        div.content#main
-            div.row
-                div.size-1-of-1
-                    div.big
-                        a(href="#")
-                            figure.big__figure
-                                img(src="img/orlando.png").image__img
-                        div.big__body
-                            h1.big__title See you in Orlando
-                            p.big__body-text
-                            | Meet and connect with your peers, colleagues and friends at the largest gathering of DOs in the world.
+        div.wrap--outer
+            div.wrap--inner
 
-            div.row.module
-                div.size-1-of-3
-                    div.box
-                        h3.box__title Quick Links
-                            ul
-                                li.box__list-item
-                                    a(href="#").box__link
-                                        span.icon-calendar Registration
-                                li.box__list-item
-                                    a(href="#").box__link
-                                        span.icon-plane Travel and Hotel
-                                li.box__list-item
-                                    a(href="#").box__link
-                                        span.icon-drawer Past Conferences
-                                li.box__list-item
-                                    a(href="#").box__link
-                                        span.icon-pencil CME Attestation
+                include header
 
-                div.size-1-of-3.border-2-of-3
-                    div.box
-                        h3.box__title Event News
-                            ul
-                                li.box__list-item
-                                    a(href="#").box__link
-                                        span.icon-document Check Out Highlights from OMED 2014
-                                li.box__list-item
-                                    figure.box__image
-                                        img(src="img/audience-1.jpg")
-                                    figcaption
-                                        p.box__caption
-                                        | A lot happened in OMED 2014! View videos, slideshows and more.
+                div.row
+                    div.size-1-of-1
+                        div.big
+                            a(href="#")
+                                figure.big__figure
+                                    img(src="img/orlando.png").image__img
+                            div.big__body
+                                h1.big__title See you in Orlando
+                                p.big__body-text
+                                | Meet and connect with your peers, colleagues and friends at the largest gathering of DOs in the world.
+
+                div.row.module
+                    div.size-1-of-3
+                        div.box
+                            h3.box__title Quick Links
+                                ul
+                                    li.box__list-item
+                                        a(href="#").box__link
+                                            span.icon-calendar Registration
+                                    li.box__list-item
+                                        a(href="#").box__link
+                                            span.icon-plane Travel and Hotel
+                                    li.box__list-item
+                                        a(href="#").box__link
+                                            span.icon-drawer Past Conferences
+                                    li.box__list-item
+                                        a(href="#").box__link
+                                            span.icon-pencil CME Attestation
+
+                    div.size-1-of-3.border-2-of-3
+                        div.box
+                            h3.box__title Event News
+                                ul
+                                    li.box__list-item
+                                        a(href="#").box__link
+                                            span.icon-document Check Out Highlights from OMED 2014
+                                    li.box__list-item
+                                        figure.box__image
+                                            img(src="img/audience-1.jpg")
+                                        figcaption
+                                            p.box__caption
+                                            | A lot happened in OMED 2014! View videos, slideshows and more.
         
-                div.size-1-of-3.border-3-of-3
-                    div.box
-                        h3.box__title Featured Speakers
-                            ul
-                                li.box__list-item
-                                    a(href="#").box__link
-                                        span.icon-mic Lorem risus amet condimentum vestibulum
-                                    figure.box__image
-                                        img(src="img/faines.jpg")
+                    div.size-1-of-3.border-3-of-3
+                        div.box
+                            h3.box__title Featured Speakers
+                                ul
+                                    li.box__list-item
+                                        a(href="#").box__link
+                                            span.icon-mic Lorem risus amet condimentum vestibulum
+                                        figure.box__image
+                                            img(src="img/faines.jpg")
+                                        figcaption
+                                            p.box__caption
+                                            | Adrienne White-Faines, MPA
+                                        figure.box__image
+                                            img(src="img/becher-tp.jpg")
+                                        figcaption
+                                            p.box__caption
+                                            | John W. Becher, DO
+
+                div.row.module
+                    div.size-1-of-3            
+                        div.box
+                            h3.box__title Twitter Feed
+                                include twitter.html
+
+                    div.size-2-of-3            
+                        div.box
+                            h3.box__title OMED 2014 Wrap-Up
+                                div.box__video#video
                                     figcaption
                                         p.box__caption
                                         | Adrienne White-Faines, MPA
-                                    figure.box__image
-                                        img(src="img/becher-tp.jpg")
-                                    figcaption
-                                        p.box__caption
-                                        | John W. Becher, DO
+                            
+                div.row.module
+                    div.size-1-of-1            
+                        div.box
+                            h3.box__title Sponsors
+                            div.right
+                                a(href="#")
+                                    span.icon-sponsor-button
+                            div.gallery                    
+                                ul
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/american-express_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/aprima_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/astrazeneca_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/bhg_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/bioback_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/challenger_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/cleveland-heart-lab_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/combank_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/cutting-edge_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/egg-nutrition-center_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/eisai_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/fsm_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/health-fusion_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/janssen_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/kareo_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/NovoNordisk_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/orexo_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/resorative-formulations_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/shire_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/takeda_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/united-allergy-services_jpg.jpg").gallery__image.image__img
+                                    li.gallery__item
+                                        a(href="#") Lorem ipsum
+                                            img(src="img/sponsors/vital-nutrients_jpg.jpg").gallery__image.image__img
 
-            div.row.module
-                div.size-1-of-3            
-                    div.box
-                        h3.box__title Twitter Feed
-                            include twitter.html
-
-                div.size-2-of-3            
-                    div.box
-                        h3.box__title OMED 2014 Wrap-Up
-                            div.box__video#video
-                                figcaption
-                                    p.box__caption
-                                    | Adrienne White-Faines, MPA
-                        
-            div.row.module
-                div.size-1-of-1            
-                    div.box
-                        h3.box__title Sponsors
-                        div.right
-                            a(href="#")
-                                span.icon-sponsor-button
-                        div.gallery                    
-                            ul
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/american-express_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/aprima_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/astrazeneca_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/bhg_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/bioback_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/challenger_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/cleveland-heart-lab_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/combank_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/cutting-edge_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/egg-nutrition-center_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/eisai_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/fsm_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/health-fusion_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/janssen_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/kareo_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/NovoNordisk_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/orexo_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/resorative-formulations_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/shire_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/takeda_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/united-allergy-services_jpg.jpg").gallery__image.image__img
-                                li.gallery__item
-                                    a(href="#") Lorem ipsum
-                                        img(src="img/sponsors/vital-nutrients_jpg.jpg").gallery__image.image__img
-
-        include footer
+            include footer

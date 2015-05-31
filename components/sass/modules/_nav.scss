@@ -1,19 +1,73 @@
+%hide-button {
+    @include breakpoint($screen $desktopstart) {
+        height: 1px;
+        width: 1px;
+        clip: rect(0 0 0 0);
+    }
+}
+
+%button-base {
+    position: absolute;
+    width: 3.75em;
+    height: 3.75em;
+    padding: 0;
+    appearance: none;
+    background-image: none;
+    border: none;
+}
+
 .nav {
 
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    padding-top: 5em;
+
+    @include breakpoint($screen $desktopstart) {
+        position: relative;
+        width: 100%;
+    }
+    
+    .js-ready & {
+        left: 0;
+        transform: translate3d(-100%, 0, 0);
+        background: $primarycolor;
+    
+        @include breakpoint($screen $desktopstart) {
+            
+            transform: translate3d(0, 0, 0);
+            background: $white;
+        }
+    }
+
+    .js-nav & {
+        transform: translate3d(0, 0, 0);
+        left: -70%;
+    }
+
+    &__close-btn {
+        
+    }
+
     &__btn {
-        position: absolute;
-        /*top: .375em;*/
-        width: 3.75em;
-        height: 3.75em;
-        padding: 0;
-        background-image: none;
-        border: none;
+        @extend %button-base;
+
+        @extend %hide-button;
+
+        &--nobg {
+            @extend %button-base;
+            @extend %hide-button;
+            background-color: transparent;
+        }
 
     }
 
     &__btn-image {
-        width: 3.75em;
-        height: 3.75em;
+        width: 3em;
+        height: 3em;
     }
 
 }

@@ -1,0 +1,15 @@
+.open {
+    transform: translate(0, 0);
+}
+
+.site-navigation {
+
+    position: fixed;
+    width: 15.625em;
+    height: 100%;
+    background: aliceblue;
+    transform: translate(-15.625em, 0);
+    transition: transform 0.3s ease-out;
+    
+
+}
