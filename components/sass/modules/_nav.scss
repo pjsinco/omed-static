@@ -30,6 +30,7 @@
     @include breakpoint($screen $desktopstart) {
         position: relative;
         width: 100%;
+        padding-top: 0;
     }
     
     .js-ready & {
@@ -48,7 +49,7 @@
         @include breakpoint($screen $desktopstart) {
             
             transform: translate3d(0, 0, 0);
-            background: $white;
+            background: $lightgray;
         }
     }
 
@@ -83,12 +84,28 @@
     }
 
     &__list {
+        margin-bottom: 0;
         list-style-type: none;
+        color: $white;
+        
+        @include breakpoint($screen $desktopstart) {
+            font-size: .875em;
+            color: inherit;
+        }
     }
 
     &__item {
         border-top: 1px solid $white;
-        color: $white;
+
+        @include breakpoint($screen $desktopstart) {
+            display: inline-block;
+            border-top: 0;
+
+            /*&:first-child > .nav__link {*/
+                /*margin-left: 0;*/
+            /*}*/
+
+        }
         
     }
 
@@ -99,5 +116,18 @@
         padding-left: 2em;
         margin-left: -1em;
         color: inherit;
+
+        @include breakpoint($screen $desktopstart) {
+            padding-left: .5em;
+            padding-right: .5em;
+            margin-left: 0;
+
+            &:hover {
+                text-decoration: none;
+                background: $primarycolor;
+                color: $white;
+            }
+
+        }
     }
 }

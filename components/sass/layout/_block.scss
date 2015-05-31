@@ -1,4 +1,5 @@
 .block {
+    @include pad(.67 of $gridpage);
     position: relative;
     margin: 0 auto;
     max-width: $sitewidth;
