@@ -7,6 +7,8 @@
         .js-ready & {
             left: 0;
             transform: translate3d(0, 0, 0);
+            transition: transform 500ms ease;
+            backface-visibility: hidden;
         }
 
         .js-nav & {

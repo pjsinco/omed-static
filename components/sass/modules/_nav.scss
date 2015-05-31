@@ -26,16 +26,25 @@
     height: 100%;
     padding-top: 5em;
 
+
     @include breakpoint($screen $desktopstart) {
         position: relative;
         width: 100%;
     }
     
     .js-ready & {
+
+        .block {
+            transition: opacity 300ms 100ms ease, transform 500ms ease;
+        }
+
         left: 0;
         transform: translate3d(-100%, 0, 0);
+        transition: transform 500ms ease;
         background: $primarycolor;
-    
+        backface-visibility: hidden;
+        transition: opacity 300ms 100ms ease, transform 500ms ease;
+
         @include breakpoint($screen $desktopstart) {
             
             transform: translate3d(0, 0, 0);
@@ -44,18 +53,21 @@
     }
 
     .js-nav & {
-        transform: translate3d(0, 0, 0);
         left: -70%;
-    }
-
-    &__close-btn {
-        
+        transform: translate3d(0, 0, 0);
+        /*transition: transform 500ms ease;*/
     }
 
     &__btn {
         @extend %button-base;
 
         @extend %hide-button;
+
+        &--close {
+            position: absolute;
+            top: -4.375em;
+            left: .5em;
+        }
 
         &--nobg {
             @extend %button-base;
@@ -70,4 +82,22 @@
         height: 3em;
     }
 
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        border-top: 1px solid $white;
+        color: $white;
+        
+    }
+
+    &__link {
+        display: block;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 2em;
+        margin-left: -1em;
+        color: inherit;
+    }
 }

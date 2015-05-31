@@ -339,13 +339,17 @@ strong {
   .js-ready .wrap--inner {
     left: 0;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
-  /* line 12, ../../../components/sass/layout/_wrap.scss */
+            transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 500ms ease;
+            transition: transform 500ms ease;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden; }
+  /* line 14, ../../../components/sass/layout/_wrap.scss */
   .js-nav .wrap--inner {
     /*left: 70%;*/
     -webkit-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
             transform: translate3d(70%, 0, 0) scale3d(1, 1, 1); }
-/* line 18, ../../../components/sass/layout/_wrap.scss */
+/* line 20, ../../../components/sass/layout/_wrap.scss */
 .wrap--outer {
   position: relative;
   overflow: hidden;
@@ -353,6 +357,15 @@ strong {
   margin-right: auto;
   max-width: 62em;
   width: 100%; }
+
+/* line 1, ../../../components/sass/layout/_block.scss */
+.block {
+  position: relative;
+  margin: 0 auto;
+  max-width: 62em; }
+  /* line 6, ../../../components/sass/layout/_block.scss */
+  .block--padding {
+    padding: 1.5em 1.25em; }
 
 /* line 3, ../../../components/sass/modules/_site-branding.scss */
 .site-branding__logo {
@@ -410,30 +423,61 @@ strong {
     .nav {
       position: relative;
       width: 100%; } }
-  /* line 34, ../../../components/sass/modules/_nav.scss */
+  /* line 35, ../../../components/sass/modules/_nav.scss */
   .js-ready .nav {
     left: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
             transform: translate3d(-100%, 0, 0);
-    background: #ef6831; }
+    -webkit-transition: -webkit-transform 500ms ease;
+            transition: transform 500ms ease;
+    background: #ef6831;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: opacity 300ms 100ms ease, -webkit-transform 500ms ease;
+            transition: opacity 300ms 100ms ease, transform 500ms ease; }
+    /* line 37, ../../../components/sass/modules/_nav.scss */
+    .js-ready .nav .block {
+      -webkit-transition: opacity 300ms 100ms ease, -webkit-transform 500ms ease;
+              transition: opacity 300ms 100ms ease, transform 500ms ease; }
     @media screen and (min-width: 62em) {
-      /* line 34, ../../../components/sass/modules/_nav.scss */
+      /* line 35, ../../../components/sass/modules/_nav.scss */
       .js-ready .nav {
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
         background: #fefefe; } }
-  /* line 46, ../../../components/sass/modules/_nav.scss */
+  /* line 55, ../../../components/sass/modules/_nav.scss */
   .js-nav .nav {
+    left: -70%;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-    left: -70%; }
-  /* line 60, ../../../components/sass/modules/_nav.scss */
+    /*transition: transform 500ms ease;*/ }
+  /* line 66, ../../../components/sass/modules/_nav.scss */
+  .nav__btn--close {
+    position: absolute;
+    top: -4.375em;
+    left: .5em; }
+  /* line 72, ../../../components/sass/modules/_nav.scss */
   .nav__btn--nobg {
     background-color: transparent; }
-  /* line 68, ../../../components/sass/modules/_nav.scss */
+  /* line 80, ../../../components/sass/modules/_nav.scss */
   .nav__btn-image {
     width: 3em;
     height: 3em; }
+  /* line 85, ../../../components/sass/modules/_nav.scss */
+  .nav__list {
+    list-style-type: none; }
+  /* line 89, ../../../components/sass/modules/_nav.scss */
+  .nav__item {
+    border-top: 1px solid #fefefe;
+    color: #fefefe; }
+  /* line 95, ../../../components/sass/modules/_nav.scss */
+  .nav__link {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    margin-left: -1em;
+    color: inherit; }
 
 /* line 1, ../../../components/sass/modules/_promote.scss */
 .promote {
