@@ -149,8 +149,8 @@
         }
 
         @include breakpoint($screen $desktopstart) {
-            padding-left: .8em;
-            padding-right: .8em;
+            padding-left: .75em;
+            padding-right: .75em;
             margin-left: 0;
 
             &:hover {

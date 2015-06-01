@@ -270,30 +270,34 @@ a {
 
 /* line 21, ../../../components/sass/base/_base.scss */
 p {
+  font-size: 1em;
   margin-top: 0;
-  margin-bottom: 1em;
-  font-size: 1.125em;
-  line-height: 1.4; }
+  margin-bottom: 1em; }
+  @media screen and (min-width: 62em) {
+    /* line 21, ../../../components/sass/base/_base.scss */
+    p {
+      font-size: 1.125em;
+      line-height: 1.4; } }
 
-/* line 28, ../../../components/sass/base/_base.scss */
+/* line 32, ../../../components/sass/base/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0; }
 
-/* line 32, ../../../components/sass/base/_base.scss */
+/* line 36, ../../../components/sass/base/_base.scss */
 ul, ol {
   list-style-position: inside;
   margin-top: 0;
   padding-left: 0; }
 
-/* line 38, ../../../components/sass/base/_base.scss */
+/* line 42, ../../../components/sass/base/_base.scss */
 img {
   height: auto; }
 
-/* line 42, ../../../components/sass/base/_base.scss */
+/* line 46, ../../../components/sass/base/_base.scss */
 figure {
   margin: 0; }
 
-/* line 46, ../../../components/sass/base/_base.scss */
+/* line 50, ../../../components/sass/base/_base.scss */
 strong {
   font-weight: 600;
   color: inherit; }
@@ -415,6 +419,34 @@ strong {
       background-clip: content-box;
       background-position: left top; }
 
+/* line 3, ../../../components/sass/layout/_size.scss */
+.size-1-of-1 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+@media screen and (min-width: 62em) {
+  /* line 7, ../../../components/sass/layout/_size.scss */
+  .size-1-of-3 {
+    width: 32.20339%;
+    float: left; }
+    /* line 66, ../../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.2.5/sass/susy/language/susy/_gallery.scss */
+    .size-1-of-3:nth-child(3n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    /* line 66, ../../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.2.5/sass/susy/language/susy/_gallery.scss */
+    .size-1-of-3:nth-child(3n + 2) {
+      margin-left: 33.89831%;
+      margin-right: -100%;
+      clear: none; }
+    /* line 66, ../../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.2.5/sass/susy/language/susy/_gallery.scss */
+    .size-1-of-3:nth-child(3n + 3) {
+      margin-left: 67.79661%;
+      margin-right: -100%;
+      clear: none; } }
+
 /* line 1, ../../../components/sass/layout/_block.scss */
 .block {
   padding-left: 5.67797%;
@@ -440,9 +472,13 @@ strong {
       margin-left: 0; } }
   /* line 16, ../../../components/sass/modules/_site-branding.scss */
   .site-branding__logo--minor {
-    width: 12em;
-    display: inline-block;
-    float: right; }
+    display: none; }
+    @media screen and (min-width: 62em) {
+      /* line 16, ../../../components/sass/modules/_site-branding.scss */
+      .site-branding__logo--minor {
+        width: 12em;
+        display: inline-block;
+        float: right; } }
 
 /* line 1, ../../../components/sass/modules/_site-search.scss */
 .site-search {
@@ -451,10 +487,10 @@ strong {
     /* line 1, ../../../components/sass/modules/_site-search.scss */
     .site-search {
       position: relative;
-      right: 17.2em;
+      right: 18.5em;
       top: -5em;
       float: right;
-      width: 18.7em; } }
+      width: 19em; } }
   @media screen and (min-width: 62em) {
     /* line 12, ../../../components/sass/modules/_site-search.scss */
     .site-search__form {
@@ -659,8 +695,8 @@ strong {
     @media screen and (min-width: 62em) {
       /* line 139, ../../../components/sass/modules/_nav.scss */
       .nav__link {
-        padding-left: .8em;
-        padding-right: .8em;
+        padding-left: .75em;
+        padding-right: .75em;
         margin-left: 0; }
         /* line 156, ../../../components/sass/modules/_nav.scss */
         .nav__link:hover {
@@ -688,3 +724,58 @@ strong {
     /* line 7, ../../../components/sass/modules/_omed-logo.scss */
     .omed-logo__bottom {
       display: inline; } }
+
+/* line 3, ../../../components/sass/modules/_image.scss */
+.image__img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 1, ../../../components/sass/modules/_big.scss */
+.big {
+  position: relative; }
+  /* line 9, ../../../components/sass/modules/_big.scss */
+  .big__body-wrap {
+    position: relative;
+    top: -1.5em;
+    margin-left: 6.77966%;
+    margin-right: 6.77966%; }
+    @media screen and (min-width: 62em) {
+      /* line 9, ../../../components/sass/modules/_big.scss */
+      .big__body-wrap {
+        position: absolute;
+        top: 1.5em; } }
+  /* line 23, ../../../components/sass/modules/_big.scss */
+  .big__body {
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    background-color: #fab636;
+    color: #003d7d; }
+    @media screen and (min-width: 62em) {
+      /* line 23, ../../../components/sass/modules/_big.scss */
+      .big__body {
+        width: 45%;
+        padding: 0;
+        background-color: transparent;
+        color: #fefefe;
+        /*position: absolute;*/
+        /*top: 3em;*/
+        /*padding: 1em;*/
+        /*color: $white;*/ } }
+  /* line 45, ../../../components/sass/modules/_big.scss */
+  .big__body-text {
+    text-align: center; }
+    @media screen and (min-width: 62em) {
+      /* line 45, ../../../components/sass/modules/_big.scss */
+      .big__body-text {
+        text-align: left; } }
+  /* line 53, ../../../components/sass/modules/_big.scss */
+  .big__title {
+    text-align: center;
+    font-size: 1.5em; }
+    @media screen and (min-width: 62em) {
+      /* line 53, ../../../components/sass/modules/_big.scss */
+      .big__title {
+        text-align: left;
+        font-size: 2em; } }

@@ -14,9 +14,13 @@
         }
 
         &--minor {
-            width: 12em; 
-            display: inline-block;
-            float: right;
+            display: none;
+
+            @include breakpoint($screen $desktopstart) {
+                width: 12em; 
+                display: inline-block;
+                float: right;
+            }
         }
     }
     

@@ -19,10 +19,14 @@ a {
 }
 
 p {
+    font-size: 1em;
     margin-top: 0;
     margin-bottom: 1em;
-    font-size: $fontsizebase;
-    line-height: $bodylineheight;
+    @include breakpoint($screen $desktopstart) {
+        
+        font-size: $fontsizebase;
+        line-height: $bodylineheight;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {

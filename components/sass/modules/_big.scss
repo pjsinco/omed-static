@@ -1,0 +1,64 @@
+.big {
+
+    position: relative;
+
+    &__figure {
+
+    }
+
+    &__body-wrap {
+        position: relative;
+        top: -1.5em;
+        margin-left: span(1 of $gridpage);
+        margin-right: span(1 of $gridpage);
+
+        @include breakpoint($screen $desktopstart) {
+            position: absolute;
+            top: 1.5em;
+    
+
+        }
+    }
+
+    &__body {
+        padding-top: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        background-color: $yellow;
+        color: $aoablue;
+        
+
+        @include breakpoint($screen $desktopstart) {
+            width: 45%;
+            padding: 0;
+            background-color: transparent;
+            color: $white;
+            /*position: absolute;*/
+            /*top: 3em;*/
+            /*padding: 1em;*/
+            /*color: $white;*/
+        }
+
+    }
+
+    &__body-text {
+        text-align: center;
+
+        @include breakpoint($screen $desktopstart) {
+            text-align: left;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.5em;
+    
+        @include breakpoint($screen $desktopstart) {
+            text-align: left;
+            font-size: 2em;
+            
+        }
+    }
+
+}
