@@ -19,7 +19,7 @@
 .nav {
 
     position: absolute;
-    overflow: hidden;
+    /*overflow: hidden;*/
     top: 0;
     left: 0;
     width: 70%;
@@ -28,9 +28,12 @@
 
 
     @include breakpoint($screen $desktopstart) {
-        position: relative;
-        width: 100%;
+        @include pad(.67 of $gridpage);
+        margin: 0 auto;
         padding-top: 0;
+        max-width: $sitewidth;
+        width: 100%;
+        position: relative;
     }
     
     .js-ready & {
@@ -60,9 +63,13 @@
     }
 
     &__btn {
+        background: $primarycolor;
         @extend %button-base;
-
         @extend %hide-button;
+
+        &:focus {
+            outline: none;
+        }
 
         &--close {
             position: absolute;
@@ -89,13 +96,18 @@
         color: $white;
         
         @include breakpoint($screen $desktopstart) {
-            font-size: .875em;
+            text-transform: uppercase;
+            font-size: .75em;
             color: inherit;
         }
     }
 
     &__item {
         border-top: 1px solid $white;
+        
+        &:hover {
+            background: rgba($white, .2);
+        }
 
         @include breakpoint($screen $desktopstart) {
             display: inline-block;
@@ -107,6 +119,21 @@
 
         }
         
+        
+        &--search {
+          margin-right: 0;
+          background: $lightgray;
+
+          @include breakpoint($screen $desktopstart) {
+            position: absolute;
+            z-index: -1;
+            /*top: -1em;*/
+            /*right: 4.3em;*/
+            /*float: right;*/
+            /*max-width: 16.2em;*/
+            background: 0;
+          }
+        }
     }
 
     &__link {
@@ -117,13 +144,16 @@
         margin-left: -1em;
         color: inherit;
 
+        &:hover {
+            text-decoration: none;
+        }
+
         @include breakpoint($screen $desktopstart) {
-            padding-left: .5em;
-            padding-right: .5em;
+            padding-left: .8em;
+            padding-right: .8em;
             margin-left: 0;
 
             &:hover {
-                text-decoration: none;
                 background: $primarycolor;
                 color: $white;
             }

@@ -1,8 +1,23 @@
 .site-branding {
 
     &__logo {
-        max-width: 4em;
-        /*margin-left: 2.25em;*/
+        width: 5em;
+        display: inline-block;
+        margin-top: .5em;
+        margin-left: 2.25em;
+
+        @include breakpoint($screen $desktopstart) {
+            width: 7.7em;
+            margin-top: .5em;
+            margin-left: 0;
+
+        }
+
+        &--minor {
+            width: 12em; 
+            display: inline-block;
+            float: right;
+        }
     }
     
 

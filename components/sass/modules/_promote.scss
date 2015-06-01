@@ -2,7 +2,13 @@
 
     /*@include container($gridpage);*/
     /*@include pad(.75 of $gridpage);*/
-    /*margin-top: 1em;*/
     @include clearfix;
+
+    @include breakpoint($screen $desktopstart) {
+        
+        @include pad(.67 of $gridpage);
+        margin-top: 2.75em;
+        margin-bottom: 2em;
+    }
 
 }

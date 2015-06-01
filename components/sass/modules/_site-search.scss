@@ -1,0 +1,73 @@
+.site-search {
+    position: relative;
+
+    @include breakpoint($screen $desktopstart) {
+        position: relative;
+        right: 17.2em;
+        top: -5em;
+        float: right;
+        width: 18.7em;
+    }
+
+    &__form {
+        @include breakpoint($screen $desktopstart) {
+            border: 1px solid $lightgray;
+            border-radius: 4px;
+        }
+        
+    }
+
+    &__button {
+        border: none;
+        background: $lightgray;
+
+        &--hide {
+            display: none;
+        }
+    }
+
+    &__input {
+        @include breakpoint($screen $desktopstart) {
+            display: inline-block;
+            top: .25em;
+            background: $white url('../img/glass.svg') 100% 50% no-repeat;
+            background-size: 18px 18px;
+            height: 1.6em;
+            width: 87%;
+            position: relative;
+            margin-top: 0;
+            margin-bottom: .6875em;
+            padding-left: .75em;
+            padding-right: .75em;
+            line-height: 1.7;
+            border: 0;
+            outline: none;
+            cursor: text;
+        }
+    }
+
+    &:-ms-input-placeholder {
+      color: transparent;
+    }
+
+
+    @include breakpoint($screen $desktopstart) {
+      /*width: 0;*/
+      font-size: 1em;
+
+      &:focus {
+        /*margin-top: 0;*/
+        width: 10em;
+        outline: none;
+        cursor: text;
+        background-position: 3px 50%;
+      
+
+        &[type=text] {
+          /*padding: .5em 0 .5em 2em;*/
+        }
+      }
+    }
+
+    
+}

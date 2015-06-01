@@ -1,22 +1,18 @@
-header(role="banner").promote.row.block#top
+header(role="banner").promote.row#top
     button.nav__btn#nav-open-btn: img(src="img/hamburger.png").nav__btn-image
-        
-    h1.site-branding__logo
-        a(href="/").site-branding__link
-            include omed-logo.svg
 
-            
-        div.site-branding--minor
-            div.site-branding__logo
-                a(href="http://www.osteopathic.org" title="American Osteopathic Association").site-branding__link
+    div.site-branding    
+        h1.site-branding__logo
+            a(href="/").site-branding__link
+                include omed-logo.svg
+
+                
+        h3.site-branding__logo--minor
+            a(href="http://www.osteopathic.org" title="American Osteopathic Association").site-branding__link
+                include aoa-logo-full.svg
     
-    section.site-search
-        form(action="/search")#search-form.site-search__form
-            label#search-lable.site-search__lable(for="q")
-                input(type="search" name="q" placeholder="Search OMED Conferences")#q.site-search__input
-            input(type="submit").site-search__button-hide
 
-nav(role="navigation")#site-nav.nav.row.block
+nav(role="navigation")#site-nav.nav.row
     ul.nav__list
         li.nav__item: a(href="#").nav__link Registration
         li.nav__item: a(href="#").nav__link Travel & Hotel
@@ -26,6 +22,12 @@ nav(role="navigation")#site-nav.nav.row.block
         li.nav__item: a(href="#").nav__link Exhibits
         li.nav__item: a(href="#").nav__link Press Room
         li.nav__item: a(href="#").nav__link Contact Us
+        li.nav__item.nav__item--search
+            section.site-search
+                form(action="/search")#search-form.site-search__form
+                    label#search-lable.site-search__lable(for="q")
+                    input(type="search" name="q" placeholder="Search OMED")#q.site-search__input
+                    input(type="submit").site-search__button--hide
 
     button.nav__btn--nobg.nav__btn--close#nav-close-btn: img(src="img/close-btn.svg").nav__btn-image
     
